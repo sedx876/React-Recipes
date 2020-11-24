@@ -1,10 +1,15 @@
 import React from 'react'
-import './App.css';
+import { RandomMeal } from './components'
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
-      
+      <h1>My Recipes</h1>
+      <div className="container">
+        <h2>Featured Meal</h2>
+        <RandomMeal/>
+      </div>
     </div>
   );
 }
