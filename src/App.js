@@ -1,15 +1,18 @@
 import React from 'react'
-import { RandomMeal } from './components'
+import { RandomMeal, Meal, Header } from './components'
 
 
-const App = () => {
+const App = ({}) => {
   return (
     <div className="App">
-      <h1>My Recipes</h1>
-      <div className="container">
-        <h2>Featured Meal</h2>
+      <input type="text"/>
+        <Header/>
         <RandomMeal/>
-      </div>
+        <Meal/>
+        <Meal/>
+      <section className="container">
+        <h2>Search Results:</h2>
+      </section>
     </div>
   );
 }
